@@ -7,7 +7,7 @@ name = "marsel"
 version = "0.1.0"
 description = "A lightweight utility library"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = "MIT"
 authors = [
     {name = "Shaxzodbek", email = "muxtorovshaxzodbek16@gmail.com"}
@@ -17,7 +17,6 @@ classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -34,12 +33,12 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/shaxzodbek16/marsel"
+Homepage = "https://shaxzodbek.com/projects/marsel/"
 Repository = "https://github.com/shaxzodbek16/marsel"
 "Bug Tracker" = "https://github.com/shaxzodbek16/marsel/issues"
 
 [tool.setuptools]
-packages = ["marsel", "marsel.utils"]
+packages = ["marsel"]
 
 [tool.setuptools.package-data]
 marsel = ["py.typed"]
