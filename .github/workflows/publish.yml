@@ -2,7 +2,7 @@ name: Publish to PyPI
 
 on:
   release:
-    types: [ created ]
+    types: [created]
 
 jobs:
   publish:
@@ -12,16 +12,21 @@ jobs:
       id-token: write
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - run: |
+      - name: Install build dependencies
+        run: |
           pip install --upgrade pip
           pip install build
 
-      - run: python -m build
+      - name: Build package
+        run: python -m build
 
-      - uses: pypa/gh-action-pypi-publish@release/v1
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1

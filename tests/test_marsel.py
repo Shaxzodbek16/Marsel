@@ -1,5 +1,6 @@
 from marsel import Marsel
 
+
 def test_generate_random_otp_default_length():
     otp = Marsel.generate_random_otp()
     assert len(otp) == 6
