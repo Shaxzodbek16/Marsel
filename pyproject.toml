@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "marsel"
 version = "0.0.1"
 description = "A lightweight utility library"
-authors = [{ name = "Shaxzodbek" }]
+authors = [{ name = "Shaxzodbek", email = "muxtorovshaxzodbek16@gmail.com" }]
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.9"
 license = { text = "MIT" }
@@ -17,3 +17,6 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://github.com/shaxzodbek16/marsel"
+
+[tool.setuptools.packages]
+find = {}
