@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "marsel"
-version = "0.1.0"
+version = "0.1.1"
 description = "A lightweight utility library"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -24,6 +24,7 @@ classifiers = [
 dependencies = [
     "passlib[bcrypt]>=1.7.4",
     "redis>=4.5.0",
+    "sqlalchemy>=2.0.45",
 ]
 
 [project.optional-dependencies]
